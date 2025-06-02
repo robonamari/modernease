@@ -60,6 +60,7 @@ jobs:
           mkdir -p templates downloads
           rm -rf templates/* downloads/*
           curl -L "$ASSET_URL" -o "$ZIP_NAME"
+          unzip -q "$ZIP_NAME" -d downloads/
           unzip -q "$ZIP_NAME" -d temp_zip/
           cp -r temp_zip/templates/* templates/ 2>/dev/null || true
           cp -r temp_zip/downloads/* downloads/ 2>/dev/null || true
