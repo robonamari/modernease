@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "ফাইলসমূহ চাওক আৰু ডাউনলোড কৰক, আদি, উন্নত বৈশিষ্ট্য আৰু এক সৰল, কাৰ্যকৰী ব্যৱহাৰকাৰী ইণ্টাৰফেইচৰ সৈতে।"
+body:
+  search_placeholder: "অনুসন্ধান কৰক..."
+  file: "ফাইল"
+  name: "নাম"
+  size: "আকাৰ"
+  last_modified: "অন্তিম সম্পাদিত"
+directory_listing: "ডাইৰেক্টৰী তালিকা"
+Parent_Directory: "আগৰ ফোল্ডাৰ"

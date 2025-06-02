@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Pogledajte i preuzmite datoteke i još mnogo toga uz poboljšane značajke i jednostavno, korisničko sučelje."
+body:
+  search_placeholder: "Pretraži..."
+  file: "Datoteka"
+  name: "Ime"
+  size: "Veličina"
+  last_modified: "Posljednja izmjena"
+directory_listing: "Popis direktorija"
+Parent_Directory: "Nadređeni direktorij"

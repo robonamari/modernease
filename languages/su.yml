@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Tingali sareng unduh file sareng sumber daya sanés kalayan fitur canggih sareng antarmuka anu saderhana sareng ramah-pamaké."
+body:
+  search_placeholder: "Milarian..."
+  file: "File"
+  name: "Nami"
+  size: "Ukuran"
+  last_modified: "Parobahan Terahir"
+directory_listing: "Daptar folder"
+Parent_Directory: "Folder Indung"

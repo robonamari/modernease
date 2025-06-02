@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Badi na loda faayel ɗo da kuma wasu abubuwa tare da fasali masu ci gaba da kuma mai sauƙi da mai amfani da keɓaɓɓen fuska."
+body:
+  search_placeholder: "Nema..."
+  file: "Faayel"
+  name: "Suna"
+  size: "Girma"
+  last_modified: "Ƙarshe canza"
+directory_listing: "Jerin kundin adireshi"
+Parent_Directory: "Kundin adireshin mahaifi"

@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "ફાઇલો અને વધુ જુઓ અને ડાઉનલોડ કરો, સુધારેલી લક્ષણો અને સરળ, વપરાશકર્તા અનુકૂળ ઇન્ટરફેસ સાથે."
+body:
+  search_placeholder: "શોધો..."
+  file: "ફાઈલ"
+  name: "નામ"
+  size: "આકાર"
+  last_modified: "છેલ્લો સુધારણા"
+directory_listing: "ડિરેક્ટરીની યાદી"
+Parent_Directory: "મૂળ ડિરેક્ટરી"

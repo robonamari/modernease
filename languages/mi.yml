@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Tirohia me tango kōnae me ētahi atu rauemi me ngā āheinga matatini me te atanga whakamahi pātea me māmā."
+body:
+  search_placeholder: "Rapu..."
+  file: "Kōnae"
+  name: "Ingoa"
+  size: "Rahi"
+  last_modified: "Hōtaka whakamutunga"
+directory_listing: "Rārangi kōpaki"
+Parent_Directory: "Kōpaki matua"

@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Skoðaðu og hlaðið niður skrám og fleiru með auknum eiginleikum og einfaldri, notendavænni viðmóti."
+body:
+  search_placeholder: "Leita..."
+  file: "Skrá"
+  name: "Nafn"
+  size: "Stærð"
+  last_modified: "Síðast breytt"
+directory_listing: "Skráaskrá"
+Parent_Directory: "Yfirskrá"

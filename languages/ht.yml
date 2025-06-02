@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Gade ak telechaje fichye ak plis ankò avèk karakteristik amelyore ak yon entèfas senp e fasil pou itilizatè."
+body:
+  search_placeholder: "Chèche..."
+  file: "Fichye"
+  name: "Non"
+  size: "Gwosè"
+  last_modified: "Dènye modifikasyon"
+directory_listing: "Lis anyè"
+Parent_Directory: "Anyè paran"

@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Skatīt un lejupielādēt failus un citus resursus ar uzlabotām funkcijām un vienkāršu, ērtu lietotāja saskarni."
+body:
+  search_placeholder: "Meklēt..."
+  file: "Fails"
+  name: "Nosaukums"
+  size: "Izmērs"
+  last_modified: "Pēdējās izmaiņas"
+directory_listing: "Mapju saraksts"
+Parent_Directory: "Augšējā mape"

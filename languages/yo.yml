@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Wo ati ṣe igbasilẹ awọn faili ati diẹ sii pẹlu awọn ẹya to dara julọ ati wiwo olumulo ti o rọrun ati irọrun."
+body:
+  search_placeholder: "Wa..."
+  file: "Faili"
+  name: "Orukọ"
+  size: "Iwọn"
+  last_modified: "Ayipada Kẹhin"
+directory_listing: "Atokọ folda"
+Parent_Directory: "Folda obi"

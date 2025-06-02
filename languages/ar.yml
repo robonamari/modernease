@@ -1,0 +1,11 @@
+head:
+  dir: rtl
+  description: "عرض وتنزيل الملفات، إلخ، مع ميزات متقدمة وواجهة مستخدم بسيطة وفعالة."
+body:
+  search_placeholder: "بحث..."
+  file: "ملف"
+  name: "الاسم"
+  size: "الحجم"
+  last_modified: "آخر تعديل"
+directory_listing: "قائمة الدليل"
+Parent_Directory: "المجلد السابق"

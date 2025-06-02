@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Hlamusela na ku tirhisa swilo leswi humaka eka mafayela na swilo swin'wana hi ku tirha swi tlhela swi olova eka muxaka wa ntirho"
+body:
+  search_placeholder: "Funda..."
+  file: "Fayela"
+  name: "Vito"
+  size: "Vun'we"
+  last_modified: "Loko swi endliwa"
+directory_listing: "Luhlu ra ma folder"
+Parent_Directory: "Folda ya Vukulu"

@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Bekiek en downloodj bestanden en angere zaken mit geavange funksies en 'n einvoudige, gebruuksvrundelike sjnitte."
+body:
+  search_placeholder: "Zeuk..."
+  file: "Bestand"
+  name: "Naom"
+  size: "Grootte"
+  last_modified: "Lètste wieziging"
+directory_listing: "Maplijst"
+Parent_Directory: "Bovegelegde map"

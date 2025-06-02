@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "ファイルやその他のコンテンツを表示・ダウンロード、高度な機能とシンプルで使いやすいインターフェースを備えています。"
+body:
+  search_placeholder: "検索..."
+  file: "ファイル"
+  name: "名前"
+  size: "サイズ"
+  last_modified: "最終更新"
+directory_listing: "ディレクトリ一覧"
+Parent_Directory: "親ディレクトリ"

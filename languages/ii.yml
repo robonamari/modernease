@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "ꋍꄿꀋꉆꌠꀋꎿꑘꁧꂿꁨꌠ, ꀊꎿꀋꑘꀀꂿꑘꈩꄉꀋꎿꑘꀋꁧꌠ."
+body:
+  search_placeholder: "ꌠꈤ..."
+  file: "ꌠꁧ"
+  name: "ꈩ"
+  size: "ꑘꂿ"
+  last_modified: "ꀋꎿꑘꄿ"
+directory_listing: "ꂿꑘꎿꑘ"
+Parent_Directory: "ꀀꎿꑘ"

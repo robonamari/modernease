@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Vhona na u download-a mafayili na zwiṅwe zwiṅwe nga ndi zwine zwa konewa na u shumisa zwine zwa nga vha zwi easy na zwi user-friendly."
+body:
+  search_placeholder: "Tshimbidza..."
+  file: "Fayili"
+  name: "Dzina"
+  size: "U fhira"
+  last_modified: "U bvishelwa"
+directory_listing: "Letshele la directory"
+Parent_Directory: "Directory ya vhadzulo"

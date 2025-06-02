@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Se og download filer og mere med forbedrede funktioner og et simpelt, brugervenligt interface."
+body:
+  search_placeholder: "Søg..."
+  file: "Fil"
+  name: "Navn"
+  size: "Størrelse"
+  last_modified: "Sidst ændret"
+directory_listing: "Liste over mapper"
+Parent_Directory: "Overordnet mappe"

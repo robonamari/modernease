@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Uqautchiginiaq files atuqtuatlu takuyagaksraq, atautchikun atuqtuaq nalupqisigikpiñ."
+body:
+  search_placeholder: "Uqaġigivik..."
+  file: "Iḷisaqtuaq"
+  name: "Atqa"
+  size: "Aŋiŋñaq"
+  last_modified: "Akuni uqaqtiqtuq"
+directory_listing: "Aqpaġivik atausiq"
+Parent_Directory: "Iḷutqun aqpaġvik"

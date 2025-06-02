@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Gelişmiş özellikler ve basit, kullanıcı dostu bir arayüz ile dosyaları ve diğer kaynakları görüntüleyin ve indirin."
+body:
+  search_placeholder: "Ara..."
+  file: "Dosya"
+  name: "Ad"
+  size: "Boyut"
+  last_modified: "Son Değişiklik"
+directory_listing: "Dizin Listesi"
+Parent_Directory: "Ana Dizin"

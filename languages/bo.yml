@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "ལྷུང་ལེན་མཁས་ལུགས་འདིའི་གསར་བསྡུས་བྱ་བའི་སྣང་གི་ཡི་བའི་ཕེབས་འདིར་འབད་ཡོད།"
+body:
+  search_placeholder: "འཚོལ་བ..."
+  file: "ཡི་བ"
+  name: "མིང་"
+  size: "འགྱུར"
+  last_modified: "མིང་འདི་ཡང་བསྡུས"
+directory_listing: "ཁ་ལོ་མིང་བཀོད"
+Parent_Directory: "མིང་གི་འགྲེལ"

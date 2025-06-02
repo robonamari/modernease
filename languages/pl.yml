@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Przeglądaj i pobieraj pliki oraz inne zasoby z zaawansowanymi funkcjami i prostym, przyjaznym interfejsem użytkownika."
+body:
+  search_placeholder: "Szukaj..."
+  file: "Plik"
+  name: "Nazwa"
+  size: "Rozmiar"
+  last_modified: "Ostatnia modyfikacja"
+directory_listing: "Lista folderów"
+Parent_Directory: "Folder nadrzędny"

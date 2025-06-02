@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Bona le go tswa ka faele le resources tse dingwe ka ditshwanelo tsa go oketsa le go tlhola sesebediswa se se bonolo le se se ikemetseng"
+body:
+  search_placeholder: "Batla..."
+  file: "Faele"
+  name: "Leina"
+  size: "Boleele"
+  last_modified: "Nako ya bofelo ya go fetola"
+directory_listing: "Lethareng la dikitjana"
+Parent_Directory: "Dikitjana tsa batlhophi"

@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Tazama na pakua faili na rasilimali zingine kwa vipengele vya juu na kiolesura rahisi na rafiki kwa mtumiaji."
+body:
+  search_placeholder: "Tafuta..."
+  file: "Faili"
+  name: "Jina"
+  size: "Ukubwa"
+  last_modified: "Mabadiliko ya Mwisho"
+directory_listing: "Orodha ya majukumu"
+Parent_Directory: "Jukumu la Mzazi"

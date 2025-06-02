@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "მოუსმინეთ და ჩამოტვირთეთ ფაილები და სხვა შესწორებული ფუნქციებით და მარტივი, მომხმარებელს მეგობრული ინტერფეისით."
+body:
+  search_placeholder: "ძიება..."
+  file: "ფაილი"
+  name: "სახელი"
+  size: "ზომა"
+  last_modified: "ბოლო ცვლილება"
+directory_listing: "კატალოგების სია"
+Parent_Directory: "მაღალ კატალოგი"

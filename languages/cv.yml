@@ -1,0 +1,11 @@
+head:
+  dir: rtl
+  description: "Файлне çыннепере и çирешетсем тӑваннеçен таçҫӑн пӑрҫӑнӑ, чӑнӑшӑн хӑтӑнӑ."
+body:
+  search_placeholder: "Пӑхӑрӑш..."
+  file: "Файл"
+  name: "Исем"
+  size: "Пура"
+  last_modified: "Пӑрҫӑнӑп ҫирешетӑн"
+directory_listing: "Папкăнĕ сӑнӑрӑш"
+Parent_Directory: "Эрӑн папкă"

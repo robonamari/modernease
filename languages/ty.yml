@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Afa’i e te fa’ahora i te mau faile e te tahi atu mau rauhanga e te mau hi’oraa piha e te hoê hoê i’a’a e noaa."
+body:
+  search_placeholder: "Fa’ahora..."
+  file: "Faile"
+  name: "Inoa"
+  size: "Rahi"
+  last_modified: "Hope o te hoê atu"
+directory_listing: "Rāpare o te mau fare"
+Parent_Directory: "Fare Māmā"

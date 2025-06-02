@@ -1,0 +1,11 @@
+head:
+  dir: rtl
+  description: "Duba da sauke fayiloli da ƙari tare da ingantattun fasali da sauƙin amfani, mai amfani da keɓaɓɓen fuska."
+body:
+  search_placeholder: "Nema..."
+  file: "Fayil"
+  name: "Suna"
+  size: "Girma"
+  last_modified: "Karshe an gyara"
+directory_listing: "Jerin manyan fayiloli"
+Parent_Directory: "Babban fayil"

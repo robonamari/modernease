@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Shiko dhe shkarko skedarë, etj., me karakteristika të avancuara dhe një ndërfaqe përdoruesi të thjeshtë dhe efikase."
+body:
+  search_placeholder: "Kërko..."
+  file: "Skedar"
+  name: "Emri"
+  size: "Madhësia"
+  last_modified: "E modifikuar për herë të fundit"
+directory_listing: "Lista e Drejtimeve"
+Parent_Directory: "Dosja Para"

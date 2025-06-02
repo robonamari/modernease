@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Leka 'o e ngaahi faila mo e ngaahi me'a kehekehe 'o fakahoko mo e anga ngāue lelei mo e ngāue'anga faka'ofo'ofa"
+body:
+  search_placeholder: "Fokotu'u..."
+  file: "Faila"
+  name: "Hingoa"
+  size: "Fakama'a"
+  last_modified: "Ta'u 'a e Faingamalie"
+directory_listing: "Lisi 'o e ngaahi folder"
+Parent_Directory: "Folder 'o e māmā"

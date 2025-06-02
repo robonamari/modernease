@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Gis ak telecharger fitil yi ak beneen yu nekk ak jumtukaay yu gën am solo ak yomb ci jëfandikoo."
+body:
+  search_placeholder: "Wut..."
+  file: "Dencukaay"
+  name: "Tur"
+  size: "Yaatuwaay"
+  last_modified: "Jumteluji ji mujj"
+directory_listing: "Lista biir jumboog"
+Parent_Directory: "Jumboog bu mag"

@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Eegora iyo sooraha faylasha, iwm, iyadoo leh astaamo horumarsan iyo interface isticmaale fudud oo waxtar leh."
+body:
+  search_placeholder: "Raadi..."
+  file: "Fayl"
+  name: "Magac"
+  size: "Cabbir"
+  last_modified: "Laga beddelay ugu dambeyn"
+directory_listing: "Liiska Galka"
+Parent_Directory: "Galka Hore"

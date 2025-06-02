@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Vea e descargue ficheiros e máis con funcións melloradas e unha interface sinxela e amigable."
+body:
+  search_placeholder: "Buscar..."
+  file: "Ficheiro"
+  name: "Nome"
+  size: "Tamaño"
+  last_modified: "Última modificación"
+directory_listing: "Lista de directorios"
+Parent_Directory: "Directorio principal"

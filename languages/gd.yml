@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Coimhead agus luchdaich sìos faidhlichean agus barrachd le feartan nas fheàrr agus eadar-aghaidh sìmplidh agus furasta a chleachdadh."
+body:
+  search_placeholder: "Rannsachadh..."
+  file: "Faidhle"
+  name: "Ainm"
+  size: "Meud"
+  last_modified: "Mu dheireadh air atharrachadh"
+directory_listing: "Liosta nan pasganan"
+Parent_Directory: "Pasgan pàrant"

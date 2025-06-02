@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Díí naaltsoos yáhoot'ééłgo ádah naashá, doo áádóó baa hólǫ́ holne' doo nihá naashá, áłah naashá."
+body:
+  search_placeholder: "Díí naaltsoos..."
+  file: "Ádah naashá"
+  name: "Tʼáá íiyisí"
+  size: "Tʼáá ajiłii"
+  last_modified: "Díí baa hólǫ́ holne'"
+directory_listing: "Díí naaltsoos bii'ígíí"
+Parent_Directory: "Adoo tʼááłáʼí naaltsoos"

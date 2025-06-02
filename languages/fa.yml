@@ -1,0 +1,11 @@
+head:
+  dir: rtl
+  description: "مشاهده و دانلود فایل‌ها و غیره... با امکانات برتر و رابط کاربری ساده و کارآمد."
+body:
+  search_placeholder: "جستجو..."
+  file: "فایل"
+  name: "نام"
+  size: "اندازه"
+  last_modified: "آخرین تغییر"
+directory_listing: "لیست پوشه ها"
+Parent_Directory: "پوشه قبلی"

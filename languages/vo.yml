@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Logön e lodedön failis e votükis votik ad funks bevünetik e nunöf-pla, nesilövik."
+body:
+  search_placeholder: "Sukön..."
+  file: "Fail"
+  name: "Nem"
+  size: "Lut"
+  last_modified: "Lastevovikäd"
+directory_listing: "Lised pefidagal"
+Parent_Directory: "Pafid bevünetik"

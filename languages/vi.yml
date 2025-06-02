@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Xem và tải xuống các tệp và tài nguyên khác với các tính năng nâng cao và giao diện người dùng đơn giản, dễ sử dụng."
+body:
+  search_placeholder: "Tìm kiếm..."
+  file: "Tệp"
+  name: "Tên"
+  size: "Kích thước"
+  last_modified: "Lần sửa đổi cuối"
+directory_listing: "Danh sách thư mục"
+Parent_Directory: "Thư mục cha"

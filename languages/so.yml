@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Eeg oo soo degso faylasha iyo ilaha kale oo leh astaamo horumarsan iyo interface fudud oo saaxiibtinimo leh."
+body:
+  search_placeholder: "Raadi..."
+  file: "Fayl"
+  name: "Magaca"
+  size: "Cabbirka"
+  last_modified: "Wax ka beddelka ugu dambeeyay"
+directory_listing: "Liiska galalka"
+Parent_Directory: "Galka waalidka"

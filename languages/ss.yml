@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Buka futhi ulande amafayela nezinye izinsiza ngokusebenza okuphambili nesixhumi esibonakalayo esilula nesilungile kumsebenzisi."
+body:
+  search_placeholder: "Sesha..."
+  file: "Ifayela"
+  name: "Igama"
+  size: "Usayizi"
+  last_modified: "Ukushintsha Okugcina"
+directory_listing: "Uhlu lwezikhala"
+Parent_Directory: "Ifolda Yesizalo"

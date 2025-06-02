@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Jereo sy trohy ireo rakitra sy zavatra hafa miaraka amin'ny fiasa mandroso sy fisehoana tsotra sy mora ampiasaina."
+body:
+  search_placeholder: "Karoka..."
+  file: "Rakitra"
+  name: "Anarana"
+  size: "Habe"
+  last_modified: "Fanovana farany"
+directory_listing: "Lisitra an'ireo lahatahiry"
+Parent_Directory: "Lahatahiry ray"

@@ -1,0 +1,11 @@
+head:
+  dir: rtl
+  description: "ᓂᓯᔭᐤ ᐊᔑᓇᐦᑕᐤ ᓂᓯᔭᐤ ᐊᔑᓇᐦᑕᐤ ᐊᐱᔨᐦᑖᐤ ᓂᓯᔭᐤ ᐊᔑᓇᐦᑕᐤ ᓂᓯᔭᐤ ᐊᔑᓇᐦᑕᐤ."
+body:
+  search_placeholder: "ᐅᑯᑯᐤ"
+  file: "ᐊᔑᓇᐦᑕᐤ"
+  name: "ᐊᔑᓇᐦᑕᐤ"
+  size: "ᐊᔑᓇᐦᑕᐤ"
+  last_modified: "ᐅᑯᑯᐤ"
+directory_listing: "ᐊᔑᓇᐦᑕᐤ"
+Parent_Directory: "ᐅᑯᑯᐤ"

@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Raica ka kauta tani na faile kei na kena veika tale eso e na veika vakacakacaka ena i tukutuku ni veika tale eso kei na nodra vakaibalebale na veika."
+body:
+  search_placeholder: "Sogo..."
+  file: "Faile"
+  name: "Yaca"
+  size: "Bale"
+  last_modified: "Sega ni vakadewataka"
+directory_listing: "Lisi ni veivakatau"
+Parent_Directory: "Vakatavulici ni veivakatau"

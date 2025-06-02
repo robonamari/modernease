@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Прагляд і загрузка файлаў і інш., з пашыранымі функцыямі і простым, эфектыўным карыстальніцкім інтэрфейсам."
+body:
+  search_placeholder: "Пошук..."
+  file: "Файл"
+  name: "Назва"
+  size: "Памер"
+  last_modified: "Апошняе змяненне"
+directory_listing: "Спіс каталога"
+Parent_Directory: "Папярэдняя тэчка"

@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Jonga kwaye ukhuphele iifayile nezinye izinto ezinophuculo kunye nojongano olulula nolusebenziseka lula."
+body:
+  search_placeholder: "Phendla..."
+  file: "Ifayile"
+  name: "Igama"
+  size: "Ubungakanani"
+  last_modified: "Utshintsho lokugqibela"
+directory_listing: "Uluhlu lwefayile"
+Parent_Directory: "Uluhlu olungundoqo"

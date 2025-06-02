@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Vaata ja lae alla faile ja rohkem, täiustatud funktsioonidega ja lihtsa, kasutajasõbraliku liidesega."
+body:
+  search_placeholder: "Otsi..."
+  file: "Fail"
+  name: "Nimi"
+  size: "Suurus"
+  last_modified: "Viimati muudetud"
+directory_listing: "Kaustade nimekiri"
+Parent_Directory: "Ülemkaust"

@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Cingz、daeuj loh ndawmbuk, daeuj ndaej yawj daemq haeq loq, daengz daih dangq suij, goengq ndaej rox baeuj."
+body:
+  search_placeholder: "Caeuq..."
+  file: "Ndawmbuk"
+  name: "Mingz"
+  size: "Lajmban"
+  last_modified: "Gvangq daengz"
+directory_listing: "Ndawmbuk doekdaeuj"
+Parent_Directory: "Bouxndaw doekdaeuj"

@@ -1,0 +1,11 @@
+head:
+  dir: rtl
+  description: "באַזוכן און אראפקלאָזן טעקעס און מער, מיט פֿאַרבעסערטע פֿונקציעס און אַ פּשוט און עפעקטיוו באַניצער-אינטערפֿייס."
+body:
+  search_placeholder: "זוכן..."
+  file: "טעקע"
+  name: "נאָמען"
+  size: "גרייס"
+  last_modified: "לעצטע ענדערונג"
+directory_listing: "טעקעס רשימה"
+Parent_Directory: "הויפּט טעקע"

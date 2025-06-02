@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Faayiloota fi qabeenya biroo ilaaluu fi buufachuuf, amaloota guddinaa fi iddoo tajaajilaa salphaa fi mijataa qaba."
+body:
+  search_placeholder: "Barbaadi..."
+  file: "Faayila"
+  name: "Maqaa"
+  size: "Dheerina"
+  last_modified: "Bara darbe"
+directory_listing: "Tarree galmee"
+Parent_Directory: "Galmee abbaa"

@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Аӡәы иҧсыфыргәа еизыҩуп, арыбжьаратә аԥшшарақәа иуазыруам."
+body:
+  search_placeholder: "Ашахәаратә..."
+  file: "Аиԥылара"
+  name: "Аҵа"
+  size: "Аҧсах"
+  last_modified: "Ахаԥынтылгатә"
+directory_listing: "Ашәҟәы аусԥара"
+Parent_Directory: "Агәра-аплан"

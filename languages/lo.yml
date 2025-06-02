@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "ເບິ່ງແລະດາວໂຫລດໄຟລ໌ ແລະອື່ນໆ ດ້ວຍຄຸນສົມບັດຂັ້ນສູງ ແລະການອອກແບບທີ່ງ່າຍ ແລະໃຊ້ງານງ່າຍ."
+body:
+  search_placeholder: "ຄົ້ນຫາ..."
+  file: "ໄຟລ໌"
+  name: "ຊື່"
+  size: "ຂະໜາດ"
+  last_modified: "ການປັບປຸງຄັ້ງຫຼ້າສຸດ"
+directory_listing: "ລາຍຊື່ໂຟນເດີ"
+Parent_Directory: "ໂຟນເດີແມ່"

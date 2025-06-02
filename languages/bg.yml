@@ -1,0 +1,11 @@
+head:
+  dir: rtl
+  description: "Преглеждайте и изтегляйте файлове и още с подобрени функции и прост, лесен за използване интерфейс."
+body:
+  search_placeholder: "Търсене..."
+  file: "Файл"
+  name: "Име"
+  size: "Размер"
+  last_modified: "Последна промяна"
+directory_listing: "Списък с директории"
+Parent_Directory: "Предишна директория"

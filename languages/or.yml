@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "ଫାଇଲ୍ ଏବଂ ଅନ୍ୟାନ୍ୟ ସାମଗ୍ରୀ ଦେଖନ୍ତୁ ଏବଂ ଡାଉନଲୋଡ୍ କରନ୍ତୁ, ଉନ୍ନତ ବିଶେଷତା ଏବଂ ସହଜ ଏବଂ ପ୍ରୟୋଗକର୍ତ୍ତା-ମିତ୍ର ଇଣ୍ଟରଫେସ୍ ସହିତ।"
+body:
+  search_placeholder: "ଖୋଜନ୍ତୁ..."
+  file: "ଫାଇଲ୍"
+  name: "ନାମ"
+  size: "ଆକାର"
+  last_modified: "ଶେଷ ପରିବର୍ତ୍ତନ"
+directory_listing: "ଡାଇରେକ୍ଟରୀ ତାଲିକା"
+Parent_Directory: "ପୂର୍ବତନ ଡାଇରେକ୍ଟରୀ"

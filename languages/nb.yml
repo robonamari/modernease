@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Se og last ned filer og annet innhold med avanserte funksjoner og et enkelt og brukervennlig grensesnitt."
+body:
+  search_placeholder: "Søk..."
+  file: "Fil"
+  name: "Navn"
+  size: "Størrelse"
+  last_modified: "Sist endret"
+directory_listing: "Katalogliste"
+Parent_Directory: "Foreldrekatalog"

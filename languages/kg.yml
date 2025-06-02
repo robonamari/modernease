@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Lota na kuzwila makanda yina kadi disolo zinga na buzi ya sanu, ke utuzila mambu ya kabaka mpe yimo."
+body:
+  search_placeholder: "Lota..."
+  file: "Kanda"
+  name: "Lina"
+  size: "Basi"
+  last_modified: "Tukulusu na nsima"
+directory_listing: "Limo ya nkondo"
+Parent_Directory: "Limo ya nkondo ya pwa"

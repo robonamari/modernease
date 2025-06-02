@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Sieh dir Dateien an und lade sie herunter, mit erweiterten Funktionen und einer einfachen, benutzerfreundlichen Oberfläche."
+body:
+  search_placeholder: "Suchen..."
+  file: "Datei"
+  name: "Name"
+  size: "Größe"
+  last_modified: "Zuletzt geändert"
+directory_listing: "Verzeichnisliste"
+Parent_Directory: "Übergeordnetes Verzeichnis"

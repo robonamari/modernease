@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Talá mpe zwá bafichiers ná biloko mosusu na makoki malamu mpe ebongiseli ya pete mpe ya malamu."
+body:
+  search_placeholder: "Luka..."
+  file: "Fichier"
+  name: "Nkombo"
+  size: "Monene"
+  last_modified: "Bobongwani ya suka"
+directory_listing: "Lista ya ba dosié"
+Parent_Directory: "Dosié ya likoló"

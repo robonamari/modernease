@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Omonana no okutambula oofaila nayi ihe ya vule na omapulo ga tokola ni mo omukongo iwa nawa."
+body:
+  search_placeholder: "Lombwela..."
+  file: "Ofaila"
+  name: "Eto"
+  size: "Ongushu"
+  last_modified: "Otandi yalwe kehe"
+directory_listing: "Oludato lwoma direkotori"
+Parent_Directory: "Direkotori lyokununa"

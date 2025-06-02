@@ -1,0 +1,11 @@
+head:
+  dir: rtl
+  description: "Дакъанаш дуьйцаларнаш, йухъах дlада файлеш, дешар йоза интерфейсаш а, тlехьахьий мотт."
+body:
+  search_placeholder: "Лахар..."
+  file: "Файл"
+  name: "Цlер"
+  size: "Доьзал"
+  last_modified: "Йухъах долу"
+directory_listing: "Директори тасарар"
+Parent_Directory: "Йист директо"

@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Faylları görüntüləyin və yükləyin və s., qabaqcıl xüsusiyyətlər və sadə, effektiv istifadəçi interfeysi ilə."
+body:
+  search_placeholder: "Axtar..."
+  file: "Fayl"
+  name: "Ad"
+  size: "Ölçü"
+  last_modified: "Sonuncu dəyişiklik"
+directory_listing: "Qovluq siyahısı"
+Parent_Directory: "Əvvəlki Qovluq"

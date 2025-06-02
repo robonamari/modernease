@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Gweles ha dawndhys ow feylow ha re bell yn kyns a venowghs owter a'nferh a'n omro dhe worthevyans ynterfeyns siwynn."
+body:
+  search_placeholder: "Kledh..."
+  file: "Feyl"
+  name: "Hwedh"
+  size: "Meur"
+  last_modified: "Glastowgh diworth"
+directory_listing: "Raglyver dyrekter"
+Parent_Directory: "Raglyver prys"

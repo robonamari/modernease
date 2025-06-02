@@ -1,0 +1,11 @@
+head:
+  dir: rtl
+  description: "Labaako era okuteeka ne okugabira amafaayiro n'ebirala n'emirimu egy'enjawulo n'enkolagana etali n'ekyangu."
+body:
+  search_placeholder: "Londa..."
+  file: "Fayiro"
+  name: "Erinnya"
+  size: "Obungi"
+  last_modified: "Okuddeko okw'omuwendo"
+directory_listing: "Lukuusi lw'amaaka"
+Parent_Directory: "Amaaka agasooka"

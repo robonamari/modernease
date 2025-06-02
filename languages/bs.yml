@@ -1,0 +1,11 @@
+head:
+  dir: rtl
+  description: "Pogledajte i preuzmite datoteke i više sa unaprijeđenim značajkama i jednostavnim, korisnički prijateljskim sučeljem."
+body:
+  search_placeholder: "Pretraga..."
+  file: "Datoteka"
+  name: "Ime"
+  size: "Veličina"
+  last_modified: "Posljednja izmjena"
+directory_listing: "Popis direktorija"
+Parent_Directory: "Prethodni direktorij"

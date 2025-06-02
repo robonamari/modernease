@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Переглядайте та завантажуйте файли та інші ресурси з покращеними можливостями та простим, зручним інтерфейсом."
+body:
+  search_placeholder: "Пошук..."
+  file: "Файл"
+  name: "Назва"
+  size: "Розмір"
+  last_modified: "Остання зміна"
+directory_listing: "Список директорій"
+Parent_Directory: "Батьківська директорія"

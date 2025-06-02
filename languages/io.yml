@@ -1,0 +1,11 @@
+head:
+  dir: ltr
+  description: "Videz e deskarkez arkivi e altra kun avancita funkcioni e facila, user-amikala interfaco."
+body:
+  search_placeholder: "Serchez..."
+  file: "Arkivo"
+  name: "Nomo"
+  size: "Grandeso"
+  last_modified: "Lasta modifikuro"
+directory_listing: "Direktala listo"
+Parent_Directory: "Parenta direktario"
