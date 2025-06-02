@@ -60,7 +60,7 @@ jobs:
           mkdir -p templates downloads
           rm -rf templates/* downloads/*
           curl -L "$ASSET_URL" -o "$ZIP_NAME"
-          unzip -q "$ZIP_NAME" -d templates/
+          unzip -q "$ZIP_NAME" -d /
           unzip -q "$ZIP_NAME" -d downloads/
           rm "$ZIP_NAME"
       - name: Save latest tag
