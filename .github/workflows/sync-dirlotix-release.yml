@@ -1,0 +1,76 @@
+name: Sync Dirlotix Release
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  sync-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout preview branch
+        uses: actions/checkout@v4
+        with:
+          ref: preview
+      - name: Get latest release tag from dirlotix.py
+        id: get_release
+        run: |
+          TAG=$(curl -s https://api.github.com/repos/robonamari/dirlotix.py/releases/latest | jq -r .tag_name)
+          echo "latest_tag=$TAG" >> $GITHUB_OUTPUT
+      - name: Check if already deployed
+        id: check
+        run: |
+          FILE=".last-release"
+          if [[ -f "$FILE" ]]; then
+            LAST=$(cat $FILE)
+          else
+            LAST=""
+          fi
+          echo "last_deployed=$LAST" >> $GITHUB_OUTPUT
+      - name: Skip if already deployed
+        if: steps.get_release.outputs.latest_tag == steps.check.outputs.last_deployed
+        run: echo "Already deployed."
+      - name: Clean preview directory
+        if: steps.get_release.outputs.latest_tag != steps.check.outputs.last_deployed
+        run: |
+          find . -mindepth 1 ! -regex '^./\.git\(/.*\)?' -exec rm -rf {} +
+      - name: Download and dirlotix.py release
+        if: steps.get_release.outputs.latest_tag != steps.check.outputs.last_deployed
+        run: |
+          TAG=${{ steps.get_release.outputs.latest_tag }}
+          ASSET_URL=$(curl -s https://api.github.com/repos/robonamari/dirlotix.py/releases/tags/$TAG \
+            | jq -r '.assets[] | select(.name | test("^Dirlotix-.*\\.zip$")) | .browser_download_url')
+          ZIP_NAME=$(basename "$ASSET_URL")
+          curl -L "$ASSET_URL" -o "$ZIP_NAME"
+          unzip "$ZIP_NAME" -d .
+          cp "$ZIP_NAME" dirlotix-release.zip
+            rm "$ZIP_NAME"
+      - name: Download modernease release zip and extract to folders
+        if: steps.get_release.outputs.latest_tag != steps.check.outputs.last_deployed
+        run: |
+          TAG=$(curl -s https://api.github.com/repos/robonamari/modernease/releases/latest | jq -r .tag_name)
+          ASSET_URL=$(curl -s https://api.github.com/repos/robonamari/modernease/releases/tags/$TAG \
+            | jq -r '.assets[] | select(.name | test("\\.zip$")) | .browser_download_url')
+          ZIP_NAME=$(basename "$ASSET_URL")
+          mkdir -p templates downloads
+          rm -rf templates/* downloads/*
+          curl -L "$ASSET_URL" -o "$ZIP_NAME"
+          unzip -q "$ZIP_NAME" -d templates/
+          unzip -q "$ZIP_NAME" -d downloads/
+          rm "$ZIP_NAME"
+      - name: Save latest tag
+        if: steps.get_release.outputs.latest_tag != steps.check.outputs.last_deployed
+        run: echo "${{ steps.get_release.outputs.latest_tag }}" > .last-release
+      - name: Commit and push
+        if: steps.get_release.outputs.latest_tag != steps.check.outputs.last_deployed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Deploy release ${{ steps.get_release.outputs.latest_tag }} from dirlotix.py + modernease zip"
+          git push origin preview
