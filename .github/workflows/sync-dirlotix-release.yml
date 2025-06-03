@@ -40,10 +40,11 @@ jobs:
         ASSET_URL=$(curl -s https://api.github.com/repos/robonamari/dirlotix.py/releases/tags/$TAG \
           | jq -r '.assets[] | select(.name | test("^Dirlotix-.*\\.zip$")) | .browser_download_url')
         ZIP_NAME=$(basename "$ASSET_URL")
-        curl -sL "$ASSET_URL" -o "$ZIP_NAME"
-        unzip -q "$ZIP_NAME" -d .
-        cp "$ZIP_NAME" dirlotix-release.zip
-        rm "$ZIP_NAME"
+        mkdir -p downloads
+        curl -sL "$ASSET_URL" -o "downloads/$ZIP_NAME"
+        unzip -q "downloads/$ZIP_NAME" -d .
+        cp "downloads/$ZIP_NAME" downloads/dirlotix-release.zip
+        rm "downloads/$ZIP_NAME"
     - name: Download and extract Modernease release
       run: |
         TAG=$(curl -s https://api.github.com/repos/robonamari/modernease/releases/latest | jq -r .tag_name)
