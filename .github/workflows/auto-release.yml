@@ -1,4 +1,4 @@
-name: 📦Auto Release
+name: Auto Release
 
 on:
   push:
@@ -10,23 +10,25 @@ permissions:
   id-token: write
 
 jobs:
-  create_release:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-      - name: Get tag name
+      - name: Extract tag name
+        id: extract
         run: echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
-      - name: Create zip archive
-        run: zip -r "ModernEase-${TAG_NAME}.zip" . -x ".github/*" ".git/*" "README.md" ".gitignore"
-      - name: Create tar.gz archive
-        run: tar --exclude=.github --exclude=.git --exclude=README.md --exclude=.gitignore --exclude="ModernEase-${TAG_NAME}.zip" --ignore-failed-read -czf "ModernEase-${TAG_NAME}.tar.gz" .
-      - name: Upload Release
+      - name: Build release assets
+        run: |
+          FILENAME="ModernEase-${TAG_NAME}"
+          zip -r "$FILENAME.zip" . -x ".git/*" ".github/*" "README.md" ".gitignore" "*.zip" "*.tar.gz"
+          tar --exclude='.git' --exclude='.github' --exclude='README.md' --exclude='.gitignore' --exclude='*.zip' --exclude='*.tar.gz' -czf "$FILENAME.tar.gz" .
+      - name: Upload GitHub release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ env.TAG_NAME }}
+          tag_name: "${{ env.TAG_NAME }}"
           name: "${{ env.TAG_NAME }}"
           files: |
             ModernEase-${{ env.TAG_NAME }}.zip
