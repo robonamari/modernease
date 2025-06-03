@@ -1,0 +1,22 @@
+name: React to Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  add-reaction:
+    runs-on: ubuntu-latest
+    steps:
+      - name: React with Rocket Emoji
+        run: |
+          gh api \
+            -X POST \
+            -H "Accept: application/vnd.github.squirrel-girl-preview+json" \
+            /repos/${{ github.repository }}/releases/${{ github.event.release.id }}/reactions \
+            -f content=rocket
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
