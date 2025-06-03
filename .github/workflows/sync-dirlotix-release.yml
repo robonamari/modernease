@@ -26,11 +26,14 @@ jobs:
         id: check
         run: |
           FILE=".last-release"
-          LAST=""
+          LAST_DIRLOTIX=""
+          LAST_MODERNEASE=""
           if [[ -f "$FILE" ]]; then
-            LAST=$(<"$FILE")
+            LAST_DIRLOTIX=$(sed -n '1p' "$FILE")
+            LAST_MODERNEASE=$(sed -n '2p' "$FILE")
           fi
-          echo "last_deployed=$LAST" >> $GITHUB_OUTPUT
+          echo "last_dirlotix=$LAST_DIRLOTIX" >> $GITHUB_OUTPUT
+          echo "last_modernease=$LAST_MODERNEASE" >> $GITHUB_OUTPUT
       - name: Skip if already deployed
         if: steps.get_release.outputs.latest_tag == steps.check.outputs.last_deployed
         run: echo "Already deployed."
@@ -66,7 +69,10 @@ jobs:
           rm -rf temp_zip "$ZIP_NAME"
       - name: Save latest tag
         if: steps.get_release.outputs.latest_tag != steps.check.outputs.last_deployed
-        run: echo "${{ steps.get_release.outputs.latest_tag }}" > .last-release
+        run: |
+          MOD_TAG=$(curl -s https://api.github.com/repos/robonamari/modernease/releases/latest | jq -r .tag_name)
+          echo "${{ steps.get_release.outputs.latest_tag }}" > .last-release
+          echo "$MOD_TAG" >> .last-release
       - name: Commit and push
         if: steps.get_release.outputs.latest_tag != steps.check.outputs.last_deployed
         run: |
