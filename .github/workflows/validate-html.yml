@@ -18,10 +18,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Install HTML Validator
-        run: |
-          sudo apt-get install -y tidy
+        run: sudo apt-get install -y tidy
       - name: Validate HTML Files and Report Errors
         run: |
           find . -name "*.html" -print0 | while IFS= read -r -d '' file; do
-            tidy -quiet -errors "$file" || echo $file
+            tidy -quiet -errors "$file" || echo "$file"
           done
