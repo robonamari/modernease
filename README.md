@@ -38,6 +38,6 @@ Delete the current templates folder completely, then copy the templates folder f
 
 ### All Done!
 
-Your plugin should now be fully set up and ready to use!
+Your Theme should now be fully set up and ready to use!
 
 </details>
