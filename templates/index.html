@@ -15,7 +15,26 @@
   <meta property="og:image" content="{{favicon}}">
   <meta property="og:site_name" content="{{' '.join(request.host.split(':')[0].split('.')[:-1])}}">
   <meta property="og:locale" content="{{lang}}">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "{{ languages['directory_listing'] }}",
+    "itemListElement": [
+      {% for file in file_list %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "name": "{{ file.name }}",
+        "url": "{{ request.url_root.rstrip('/') }}{{ file.link }}"
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+  </script>
   <style>
     * {
       box-sizing: border-box;
@@ -190,9 +209,9 @@
         </tr> {% endfor %} </tbody>
     </table>
   </div>
-  <script src="/assets/js/local-time.min.js"></script>
-  <script src="/assets/js/search-files.min.js"></script>
-  <script src="/assets/js/sort-table.min.js"></script>
+  <script async src="/assets/js/local-time.min.js"></script>
+  <script defer src="/assets/js/search-files.min.js"></script>
+  <script defer src="/assets/js/sort-table.min.js"></script>
 </body>
 
 </html>

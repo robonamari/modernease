@@ -7,11 +7,12 @@ from typing import Any
 import aiohttp
 from dotenv import load_dotenv
 from flask import Flask, Response, abort, redirect, render_template, request, send_file
+from flask_compress import Compress
 
 from utils.translation import load_translation
 
-app = Flask(__name__, static_folder="assets", static_url_path="/assets")
-__import__("flask_compress").Compress(app)
+app = Flask(__name__, static_url_path="/assets", static_folder="assets")
+Compress(app)
 load_dotenv(".env")
 
 
