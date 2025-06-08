@@ -25,4 +25,19 @@ Modernease is a modern, responsive, and customizable theme designed for the Dirl
 ## Self-host Configuration
 
 <details>
-<summary>4 Steps to Host Your Own modernease</summary>
+<summary>2 Steps to Host Your Own modernease</summary>
+
+### 1. Download the Theme Files
+
+To download the latest version of the plugin, visit the GitHub releases page:
+🔗 [GitHub Releases](https://github.com/robonamari/modernease/releases)
+
+### 2. Replacing the templates Folder
+
+Delete the current templates folder completely, then copy the templates folder from the modernease theme package into the same location.
+
+### All Done!
+
+Your Theme should now be fully set up and ready to use!
+
+</details>
