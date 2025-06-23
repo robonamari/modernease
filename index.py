@@ -2,18 +2,24 @@ import datetime
 import glob
 import mimetypes
 import os
-from typing import Any
+from typing import Any, Union
 
-import aiohttp
 from dotenv import load_dotenv
 from flask import Flask, Response, abort, redirect, render_template, request, send_file
 from flask_compress import Compress
+from waitress import serve
 
 from utils.translation import load_translation
 
-app = Flask(__name__, static_url_path="/assets", static_folder="assets")
-Compress(app)
 load_dotenv(".env")
+
+app = Flask(__name__, static_folder="assets")
+app.add_url_rule(
+    "/favicon.ico",
+    endpoint="favicon",
+    redirect_to=os.getenv("favicon"),
+)
+Compress(app)
 
 
 @app.route("/", methods=["GET"])
@@ -24,20 +30,19 @@ async def redirect_to_default_lang() -> Response:
     Returns:
         Response: Redirect response (302) to '/en'.
     """
-    qs = request.query_string.decode()
-    url = "/en" + (f"?{qs}" if qs else "")
+    url = "/en" + (request.full_path[1:] if "?" in request.full_path else "")
     return redirect(url, code=302)
 
 
-@app.route("/<lang>", methods=["GET"])
-async def index(lang: str) -> Any:
+@app.route("/<lang_code>", methods=["GET"])
+async def index(lang_code: str) -> Union[str, Response]:
     """
     Render directory listing page for the given language.
 
     Validates the language, loads translation, lists directory contents, and renders page.
 
     Args:
-        lang (str): Two-letter language code.
+        lang_code (str): Two-letter language code.
 
     Returns:
         Any: Rendered HTML or error response.
@@ -47,9 +52,9 @@ async def index(lang: str) -> Any:
         for f in os.listdir("languages")
         if f.endswith(".yml") and len(f) == 6 and f[:-4].isalpha()
     }
-    if lang not in valid_languages:
-        return await download_file(lang)
-    languages = await load_translation(lang)
+    if lang_code not in valid_languages:
+        return await download_file(lang_code)
+    languages = await load_translation(lang_code)
     safe_root = os.path.join(os.path.dirname(__file__), "downloads")
     directory = os.path.normpath(os.path.join(safe_root, request.args.get("dir", "")))
     if not directory.startswith(safe_root) or not os.path.isdir(directory):
@@ -58,9 +63,9 @@ async def index(lang: str) -> Any:
     if directory != safe_root:
         parent_dir = os.path.dirname(directory)
         link = (
-            f"/{lang}"
+            f"/{lang_code}"
             if parent_dir == safe_root
-            else f"/{lang}?dir={os.path.relpath(parent_dir, safe_root)}"
+            else f"/{lang_code}?dir={os.path.relpath(parent_dir, safe_root)}"
         )
         file_list.append(
             {
@@ -116,13 +121,13 @@ async def index(lang: str) -> Any:
                 {
                     "icon": "fas fa-folder-open",
                     "name": name,
-                    "link": f"/{lang}?dir={os.path.relpath(file_path, safe_root)}",
+                    "link": f"/{lang_code}?dir={os.path.relpath(file_path, safe_root)}",
                 }
             )
     return render_template(
         "index.min.html",
         file_list=file_list,
-        lang=lang,
+        lang=lang_code,
         languages=languages,
         font_family=os.getenv("FONT_FAMILY"),
         favicon=os.getenv("FAVICON"),
@@ -136,18 +141,16 @@ def show_license() -> Response:
     Serve the LICENSE file as plain text.
 
     Returns:
-        Response: Flask response containing LICENSE content.
+        Response: Flask response containing the content of the LICENSE file with 'text/plain' MIME type.
+
+    Raises:
+        404: If the LICENSE file is not found.
     """
-    license_path = os.path.join(os.path.dirname(__file__), "LICENSE")
-    if not os.path.isfile(license_path):
-        return abort(404)
-    with open(license_path, "r", encoding="utf-8") as f:
-        content = f.read()
-    return Response(content, mimetype="text/plain")
+    return send_file("LICENSE", mimetype="text/plain")
 
 
 @app.route("/<path:filename>", methods=["GET"])
-async def download_file(filename: str) -> Response:
+async def download_file(filename: str) -> Union[Response, Any]:
     """
     Serve a file securely for download or inline display based on MIME type.
 
@@ -166,44 +169,20 @@ async def download_file(filename: str) -> Response:
         if part in ignore_files:
             return abort(403)
     if os.path.isfile(file_path):
-        mime_type, _ = mimetypes.guess_type(file_path)
-        if mime_type and mime_type.split("/")[0] in {
-            "image",
-            "audio",
-            "video",
-            "text",
-            "application",
-        }:
-            return send_file(file_path, mimetype=mime_type)
         return send_file(file_path, as_attachment=True)
     return abort(404)
-
-
-@app.route("/favicon.ico", methods=["GET"])
-async def favicon() -> Response:
-    """
-    Fetch favicon asynchronously from the URL in environment variable.
-
-    Returns:
-        Response: Flask response containing the favicon data.
-    """
-    favicon_url: str = os.getenv("favicon")
-    async with aiohttp.ClientSession() as session:
-        async with session.get(favicon_url) as response:
-            content: bytes = await response.read()
-            return Response(content, mimetype="image/x-icon")
 
 
 @app.errorhandler(Exception)
 async def handle_error(error: Exception) -> Any:
     """
-    Redirect to a custom error page based on HTTP error code.
+    Handle exceptions and redirect to a custom error page based on HTTP status code.
 
     Args:
-        error (Exception): Raised exception.
+        error (Exception): The raised exception.
 
     Returns:
-        Any: Redirect response to error page.
+        Response: Redirect response to a custom error page.
     """
     error_pages: dict[int, str] = {
         400: "400",
@@ -219,12 +198,23 @@ async def handle_error(error: Exception) -> Any:
 
 
 if __name__ == "__main__":
-    app.run(
-        host=os.getenv("HOST"),
-        port=os.getenv("PORT"),
-        use_reloader=os.getenv("USE_RELOADER"),
-        debug=os.getenv("DEBUG"),
-        extra_files=glob.glob(
-            os.path.join(os.path.dirname(os.path.abspath(__file__)), "*")
-        ),
-    )
+    mode = os.getenv("MODE")
+    if mode == "development":
+        app.run(
+            host=os.getenv("HOST"),
+            port=os.getenv("PORT"),
+            debug=True,
+            use_reloader=True,
+            extra_files=glob.glob(
+                os.path.join(os.path.dirname(__file__), "**", "*"), recursive=True
+            ),
+        )
+    elif mode == "production":
+        print(
+            f"Starting server on {os.getenv('HOST')}:{os.getenv('PORT')} in production mode"
+        )
+        serve(app, host=os.getenv("HOST"), port=os.getenv("PORT"))
+    else:
+        raise RuntimeError(
+            f"Invalid MODE '{mode}'. Must be 'development' or 'production'."
+        )

@@ -1,6 +1,6 @@
-aiohttp==3.12.9
 PyYAML==6.0.2
 python-dotenv==1.1.0
 Flask==3.1.1
-flask[async]
+Flask[async]==3.1.1
 Flask-Compress==1.17
+waitress==3.0.2
