@@ -3,6 +3,7 @@ import glob
 import mimetypes
 import os
 from typing import Any, Union
+from urllib.parse import quote
 
 from dotenv import load_dotenv
 from flask import Flask, Response, abort, redirect, render_template, request, send_file
@@ -109,7 +110,7 @@ async def index(lang_code: str) -> Union[str, Response]:
                 {
                     "icon": icon,
                     "name": name,
-                    "link": f"/{os.path.relpath(file_path, safe_root)}",
+                    "link": f"/{quote(os.path.relpath(file_path, safe_root))}",
                     "size": f"{size:.2f}{size_units[idx]}",
                     "date": datetime.datetime.fromtimestamp(
                         os.path.getmtime(file_path), tz=datetime.timezone.utc
@@ -121,7 +122,7 @@ async def index(lang_code: str) -> Union[str, Response]:
                 {
                     "icon": "fas fa-folder-open",
                     "name": name,
-                    "link": f"/{lang_code}?dir={os.path.relpath(file_path, safe_root)}",
+                    "link": f"/{lang_code}?dir={quote(os.path.relpath(file_path, safe_root))}",
                 }
             )
     return render_template(
