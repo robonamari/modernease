@@ -3,10 +3,10 @@ name: Validate HTML Files
 on:
   push:
     paths-ignore:
-      - '.github/**'
+      - ".github/**"
   pull_request:
     paths-ignore:
-      - '.github/**'
+      - ".github/**"
 
 permissions:
   contents: read
