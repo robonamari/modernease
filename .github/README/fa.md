@@ -2,18 +2,17 @@
 
 [**🇺🇸 English**](../../README.md)
 
-</div>
-
-<p align="center">
-  <img src="https://img.shields.io/github/languages/code-size/robonamari/modernease?style=flat" alt="Code Size">
-  <img src="https://tokei.rs/b1/github/robonamari/modernease?style=flat" alt="Total lines">
-  <img src="https://img.shields.io/badge/HTML-%5E5-blue" alt="HTML Versions">
-  <img src="https://img.shields.io/github/license/robonamari/modernease" alt="GitHub license">
-</p>
+![حجم کد](https://img.shields.io/github/languages/code-size/robonamari/modernease?style=flat)
+![تعداد خطوط](https://tokei.rs/b1/github/robonamari/modernease?style=flat)
+![نسخه HTML](https://img.shields.io/badge/HTML-%5E5-blue)
+![مجوز گیت هاب](https://img.shields.io/github/license/robonamari/modernease)
 
 ---
 
-<img src="/.github/banner.png" alt="بنر">
+![بنر](/.github/banner.png)
+
+</div>
+
 <p dir="rtl">
 
 Modernease یک تم مدرن، واکنش‌گرا و قابل تنظیم است که برای برنامه مدیریت فایل Dirlotix.py طراحی شده. این تم با استفاده از HTML، CSS و JavaScript ساخته شده و رابط کاربری شیکی را ارائه می‌دهد. همچنین با پشتیبانی از چند زبان، تجربه کاربری بهتری را فراهم می‌کند.
