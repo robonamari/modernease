@@ -1,0 +1,42 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "ຄົ້ນຫາ..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr "ເບິ່ງແລະດາວໂຫລດໄຟລ໌ ແລະອື່ນໆ ດ້ວຍຄຸນສົມບັດຂັ້ນສູງ ແລະການອອກແບບທີ່ງ່າຍ ແລະໃຊ້ງານງ່າຍ."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "ລາຍຊື່ໂຟນເດີ"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "ໄຟລ໌"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "ຊື່"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "ຂະໜາດ"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "ການປັບປຸງຄັ້ງຫຼ້າສຸດ"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "ໂຟນເດີແມ່"

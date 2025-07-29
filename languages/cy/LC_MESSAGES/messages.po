@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Chwilio..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Gweld a lawrlwytho ffeiliau a mwy gyda nodweddion gwell a rhyngwyneb "
+"defnyddiwr syml a hawdd ei ddefnyddio."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Rhestr cyfeiriadur"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Ffeil"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Enw"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Maint"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Newidiwyd ddiwethaf"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Cyfeiriadur rhiant"

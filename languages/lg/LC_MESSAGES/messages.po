@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "rtl"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Londa..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Labaako era okuteeka ne okugabira amafaayiro n'ebirala n'emirimu "
+"egy'enjawulo n'enkolagana etali n'ekyangu."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Lukuusi lw'amaaka"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Fayiro"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Erinnya"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Obungi"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Okuddeko okw'omuwendo"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Amaaka agasooka"

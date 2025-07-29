@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Phendla..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Jonga kwaye ukhuphele iifayile nezinye izinto ezinophuculo kunye nojongano "
+"olulula nolusebenziseka lula."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Uluhlu lwefayile"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Ifayile"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Igama"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Ubungakanani"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Utshintsho lokugqibela"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Uluhlu olungundoqo"

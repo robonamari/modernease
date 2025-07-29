@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Shaka..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Reba na kubika amafayili hamwe n'ibindi bikoresho bifise ubushobozi bwo "
+"hejuru n'uburyo bworoshye kandi bw'umukoresha."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Urutonde rw'amadosiye"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Ifayili"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Izina"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Ingano"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Guhindurwa nyuma"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Dosiye ya mbere"

@@ -1,0 +1,42 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "खोज्नुहोस्..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr "फाइलहरू र अन्य सामग्रीहरूलाई उन्नत सुविधाहरू र साधारण र प्रयोगकर्ता-मित्रवत इन्टरफेससँग हेर्नुहोस् र डाउनलोड गर्नुहोस्।"
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "डायरेक्टरी सूची"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "फाइल"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "नाम"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "आकार"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "अन्तिम परिवर्तन"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "अघिल्लो डायरेक्टरी"

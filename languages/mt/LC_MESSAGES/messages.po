@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Fittex..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Ara u tniżżel fajls u kontenut ieħor b’karatteristiċi avvanzati u "
+"interfejs sempliċi u faċli għall-utent."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Lista tal-fajls"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Fajl"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Isem"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Daqs"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "L-aħħar modifika"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Direttorju preċedenti"

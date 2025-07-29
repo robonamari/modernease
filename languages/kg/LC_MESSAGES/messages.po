@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Lota..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Lota na kuzwila makanda yina kadi disolo zinga na buzi ya sanu, ke utuzila "
+"mambu ya kabaka mpe yimo."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Limo ya nkondo"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Kanda"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Lina"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Basi"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Tukulusu na nsima"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Limo ya nkondo ya pwa"

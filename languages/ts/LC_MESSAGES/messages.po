@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Funda..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Hlamusela na ku tirhisa swilo leswi humaka eka mafayela na swilo swin'wana "
+"hi ku tirha swi tlhela swi olova eka muxaka wa ntirho"
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Luhlu ra ma folder"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Fayela"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Vito"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Vun'we"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Loko swi endliwa"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Folda ya Vukulu"

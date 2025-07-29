@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Suesue..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Fa'amaoniga ma le la'uina o fa'amaoniga ma isi meafaigaluega ma fa'amaoniga "
+"sili ma se fa'avae faigofie ma masani i tagata."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Lisi o fa'amaoniga"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Faila"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Igoa"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Tele"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Tali'oli i le mulimuli"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Fa'amaoniga matua"

@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "rtl"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Ñemboja..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Ehecha ha e descarga arandukue ha ambue mba'e, oñemohendáva mba'e porãme "
+"ha ojapo mbopi."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Oîvo hína"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Arandukue"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Heko"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Aña"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Ojejuhu pyahu"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Mba'e"

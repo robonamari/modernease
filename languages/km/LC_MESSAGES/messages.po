@@ -1,0 +1,42 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "ស្វែងរក..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr "មើល និងបញ្ចូលឯកសារនិងផ្សេងៗទៀតជាមួយនឹងលក្ខណៈពិសេសដែលបានធ្វើឱ្យប្រសើរឡើង និងមុខងារពាក្យចចកដ៏សាមញ្ញ និងមានភាពងាយស្រួលសម្រាប់អ្នកប្រើប្រាស់។"
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "បញ្ជីថត"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "ឯកសារ"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "ឈ្មោះ"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "ទំហំ"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "កំណែចុងក្រោយ"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "ថតបង្អួត"

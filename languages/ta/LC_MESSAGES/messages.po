@@ -1,0 +1,42 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "தேடு..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr "மேம்பட்ட அம்சங்களுடன் மற்றும் எளிமையான, பயனருக்கு நட்பான இடைமுகத்துடன் கோப்புகள் மற்றும் பிற வளங்களை பார்வையிடவும் பதிவிறக்கவும்."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "கோப்புறை பட்டியல்"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "கோப்பு"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "பெயர்"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "பரிமாணம்"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "இறுதி மாற்றம்"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "பெற்றோன் கோப்புறை"

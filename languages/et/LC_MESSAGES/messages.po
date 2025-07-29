@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Otsi..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Vaata ja lae alla faile ja rohkem, täiustatud funktsioonidega ja lihtsa, "
+"kasutajasõbraliku liidesega."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Kaustade nimekiri"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Fail"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Nimi"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Suurus"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Viimati muudetud"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Ülemkaust"

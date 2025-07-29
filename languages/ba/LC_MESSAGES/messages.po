@@ -1,0 +1,42 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Эҙләү..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr "Файлдарҙы ҡарау һәм йөкләү, һәм башҡалар, алдынғы үҙенсәлектәр һәм ябай, һөҙөмтәле ҡулланыусы интерфейсы менән."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Каталог исемлеге"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Файл"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Исеме"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Размер"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Соңғы үҙгәреш"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Алдағы папка"

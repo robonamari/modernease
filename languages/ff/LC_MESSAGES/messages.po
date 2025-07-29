@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "rtl"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Suudu..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Njaɓɓe e naɗɗe faayel e jooɗiiɗe e hoore mum, e hoore ɓe hokkaade e "
+"binndi ndiyam."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Lestooje ɗiɗi"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Faayel"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Innde"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Leemsa"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Jokkude ɗiɗi"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Diiwande ɗiɗi"

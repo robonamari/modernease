@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Paieška..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Peržiūrėkite ir atsisiųskite failus bei kitą turinį su pažangiomis "
+"funkcijomis ir paprasta, patogia naudoti sąsaja."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Aplankų sąrašas"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Failas"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Pavadinimas"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Dydis"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Paskutinį kartą keista"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Aukštesnis aplankas"

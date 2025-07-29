@@ -2,6 +2,7 @@ import datetime
 import glob
 import mimetypes
 import os
+from pathlib import Path
 from typing import Any, Union
 from urllib.parse import quote
 
@@ -10,7 +11,7 @@ from flask import Flask, Response, abort, redirect, render_template, request, se
 from flask_compress import Compress
 from waitress import serve
 
-from utils.translation import load_translation
+from utils.i18n import get_translator
 
 load_dotenv(".env")
 
@@ -18,7 +19,7 @@ app = Flask(__name__, static_folder="assets")
 app.add_url_rule(
     "/favicon.ico",
     endpoint="favicon",
-    redirect_to=os.getenv("favicon"),
+    redirect_to=os.getenv("FAVICON"),
 )
 Compress(app)
 
@@ -49,17 +50,17 @@ async def index(lang_code: str) -> Union[str, Response]:
         Any: Rendered HTML or error response.
     """
     valid_languages = {
-        f[:-4]
-        for f in os.listdir("languages")
-        if f.endswith(".yml") and len(f) == 6 and f[:-4].isalpha()
+        d.name
+        for d in Path("languages").iterdir()
+        if d.is_dir() and (d / "LC_MESSAGES" / "messages.mo").exists()
     }
     if lang_code not in valid_languages:
         return await download_file(lang_code)
-    languages = await load_translation(lang_code)
     safe_root = os.path.join(os.path.dirname(__file__), "downloads")
     directory = os.path.normpath(os.path.join(safe_root, request.args.get("dir", "")))
     if not directory.startswith(safe_root) or not os.path.isdir(directory):
         return abort(404)
+    _ = get_translator(lang_code).gettext
     file_list = []
     if directory != safe_root:
         parent_dir = os.path.dirname(directory)
@@ -71,7 +72,7 @@ async def index(lang_code: str) -> Union[str, Response]:
         file_list.append(
             {
                 "icon": "fas fa-level-up-alt",
-                "name": languages["Parent_Directory"],
+                "name": _("Previous Folder"),
                 "link": link,
             }
         )
@@ -129,7 +130,7 @@ async def index(lang_code: str) -> Union[str, Response]:
         "index.min.html",
         file_list=file_list,
         lang=lang_code,
-        languages=languages,
+        _=get_translator(lang_code).gettext,
         font_family=os.getenv("FONT_FAMILY"),
         favicon=os.getenv("FAVICON"),
         theme_color=os.getenv("THEME_COLOR"),
@@ -137,7 +138,7 @@ async def index(lang_code: str) -> Union[str, Response]:
 
 
 @app.route("/LICENSE", methods=["GET"])
-def show_license() -> Response:
+async def show_license() -> Response:
     """
     Serve the LICENSE file as plain text.
 
@@ -163,13 +164,13 @@ async def download_file(filename: str) -> Union[Response, Any]:
     """
     safe_root: str = os.path.join(os.path.dirname(__file__), "downloads")
     file_path: str = os.path.normpath(os.path.join(safe_root, filename))
-    if not file_path.startswith(safe_root):
-        return abort(403)
-    ignore_files = set(os.getenv("ignore_files", "").split(","))
-    for part in filename.split("/"):
-        if part in ignore_files:
-            return abort(403)
     if os.path.isfile(file_path):
+        if not file_path.startswith(safe_root):
+            return abort(403)
+        ignore_files = set(os.getenv("ignore_files", "").split(","))
+        for part in filename.split("/"):
+            if part in ignore_files:
+                return abort(403)
         return send_file(file_path, as_attachment=True)
     return abort(404)
 

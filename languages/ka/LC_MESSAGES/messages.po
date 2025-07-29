@@ -1,0 +1,42 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "ძიება..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr "მოუსმინეთ და ჩამოტვირთეთ ფაილები და სხვა შესწორებული ფუნქციებით და მარტივი, მომხმარებელს მეგობრული ინტერფეისით."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "კატალოგების სია"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "ფაილი"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "სახელი"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "ზომა"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "ბოლო ცვლილება"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "მაღალ კატალოგი"

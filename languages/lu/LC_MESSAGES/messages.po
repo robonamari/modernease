@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Luka..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Tala mpe telechaja ba fayele n’a biloko binso, na misala mya malonga mpe "
+"etaleli ya pete ya kosalela."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Ditabu dia ba dikanda"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Fayele"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Dina"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Bule"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Lumu lwabu lulamwibwe"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Dikanda dikulu"

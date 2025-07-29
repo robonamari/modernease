@@ -1,0 +1,42 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "rtl"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "ހަމަޖެން..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr "ފައިލެއް ހެދި ބެލިދަން ކޮށް ބައިލް ހަމަޖެންކޮށް އިންފެރެސި ކުރާ ކޮށް މަރަށް ޕްރޮގެން ބިއްލުކޮށް."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "ދެކޮށް ހަމަޖެން"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "ފައިލެއް"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "ނަމް"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "މެންތް"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "ފައިލެއް ދިން މަލާމަ"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "އަންހެއް ދެކޮށް"

@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "rtl"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "ရှာဖွေ..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"ဖိုင်များနှင့် အခြားအရာများကို အဆင့်မြင့်လ"
+"_features_ နှင့် အရိုးရှင်းပြီး အသုံးပြုရလွယ်ကူသော အင်တာဖေ့စ်ဖြင့် ကြည့်ရှု၍ ဒေါင်းလုဒ်လုပ်ပါ။"
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "ဒါရိုက်ထရီစာရင်း"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "ဖိုင်"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "အမည်"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "အရွယ်အစား"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "နောက်ဆုံးပြင်ဆင်သောနေ့"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "မူလဒါရိုက်ထရီ"

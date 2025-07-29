@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Cweri..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Veyoz et batez des fitchîs et ôtes rsources avou des fonccionålités di "
+"pus, eyet ene intrface simpl' et ezåy åyidî."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Djivêye des ridants"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Fitchî"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "No"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Grandeu"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Dierin candjmint"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Ridant måjhon"

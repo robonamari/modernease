@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Tafuta..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Tazama na pakua faili na rasilimali zingine kwa vipengele vya juu na "
+"kiolesura rahisi na rafiki kwa mtumiaji."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Orodha ya majukumu"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Faili"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Jina"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Ukubwa"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Mabadiliko ya Mwisho"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Jukumu la Mzazi"

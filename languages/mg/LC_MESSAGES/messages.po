@@ -1,0 +1,44 @@
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "ltr"
+msgstr "ltr"
+
+#: templates/index.min.html:1 templates/index.html:2
+msgid "Search..."
+msgstr "Karoka..."
+
+#: templates/index.min.html:1 templates/index.html:3
+msgid ""
+"View and download files, etc., with advanced features and a simple, "
+"efficient user interface."
+msgstr ""
+"Jereo sy trohy ireo rakitra sy zavatra hafa miaraka amin'ny fiasa mandroso "
+"sy fisehoana tsotra sy mora ampiasaina."
+
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+msgid "Directory Listing"
+msgstr "Lisitra an'ireo lahatahiry"
+
+#: templates/index.html:450
+msgid "File"
+msgstr "Rakitra"
+
+#: templates/index.html:451
+msgid "Name"
+msgstr "Anarana"
+
+#: templates/index.html:452
+msgid "Size"
+msgstr "Habe"
+
+#: templates/index.html:453
+msgid "Last Modified"
+msgstr "Fanovana farany"
+
+#: index.py:75
+msgid "Previous Folder"
+msgstr "Lahatahiry ray"

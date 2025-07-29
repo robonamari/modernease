@@ -1,15 +1,18 @@
+{% set ltr = _('ltr') %}
+{% set Search = _('Search...') %}
+{% set description_text = _('View and download files, etc., with advanced features and a simple, efficient user interface.') %}
 <!DOCTYPE html>
-<html dir="{{languages['head']['dir']}}" lang="{{lang}}">
+<html dir="{{ltr}}" lang="{{lang}}">
 
 <head>
   <meta charset="UTF-8">
-  <title>{{languages['directory_listing']}}</title>
+  <title>{{_("Directory Listing")}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="{{directory_listing}} - {{' '.join(request.host.split(':')[0].split('.')[:-1])}}">
-  <meta name="description" content="{{languages['head']['description']}}">
+  <meta name="title" content="{{_('Directory Listing')}} - {{' '.join(request.host.split(':')[0].split('.')[:-1])}}">
+  <meta name="description" content="{{ description_text }}">
   <meta name="theme-color" content="{{theme_color}}">
-  <meta property="og:title" content="{{directory_listing}} - {{' '.join(request.host.split(':')[0].split('.')[:-1])}}">
-  <meta property="og:description" content="{{languages['head']['description']}}">
+  <meta property="og:title" content="{{_('Directory Listing')}} - {{' '.join(request.host.split(':')[0].split('.')[:-1])}}">
+  <meta property="og:description" content="{{_('View and download files, etc., with advanced features and a simple, efficient user interface.')}}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{request.url_root}}">
   <meta property="og:image" content="{{favicon}}">
@@ -22,7 +25,7 @@
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "{{ languages['directory_listing'] }}",
+      "name": "{{_('Directory Listing')}}",
       "itemListElement": [
         {% for file in file_list %}
         {
@@ -190,16 +193,16 @@
 </head>
 
 <body>
-  <h1>{{languages['directory_listing']}}</h1>
-  <div class="search-bar"> <input oninput="filterTable(this.value)" placeholder="{{languages['body']['search_placeholder']}}"> </div>
+  <h1>{{_("Directory Listing")}}</h1>
+  <div class="search-bar"> <input oninput="filterTable(this.value)" placeholder="{{Search}}"> </div>
   <div class="table-container">
     <table class="table table-hover table-striped">
       <thead>
         <tr>
-          <th class="icon">{{languages['body']['file']}}</th>
-          <th class="sortable" onclick="sortTable(1)">{{languages['body']['name']}}</th>
-          <th class="sortable" onclick="sortTable(2)">{{languages['body']['size']}}</th>
-          <th class="sortable" onclick="sortTable(3)">{{languages['body']['last_modified']}}</th>
+          <th class="icon">{{_("File")}}</th>
+          <th class="sortable" onclick="sortTable(1)">{{_("Name")}}</th>
+          <th class="sortable" onclick="sortTable(2)">{{_("Size")}}</th>
+          <th class="sortable" onclick="sortTable(3)">{{_("Last Modified")}}</th>
         </tr>
       </thead>
       <tbody id="fileTableBody"> {% for file in file_list %} <tr>
