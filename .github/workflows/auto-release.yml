@@ -2,8 +2,8 @@ name: Auto Release
 
 on:
   push:
-    paths:
-      - "core/client.py"
+    tags:
+      - "v*.*.*"
 
 permissions:
   contents: write
@@ -18,31 +18,19 @@ jobs:
           fetch-depth: 1
       - name: Extract version
         run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV  
-      - name: Check if tag exists
-        run: |
-          if git rev-parse "v${{ env.VERSION }}" >/dev/null 2>&1; then
-            echo "🔁 Tag already exists. Skipping release."
-            exit 0
-          fi
       - name: Build release assets
         run: |
           mkdir -p dist
-          FILENAME="ModernEase-v$VERSION"
+          FILENAME="ModernEase-${VERSION}"
           zip -rq "dist/$FILENAME.zip" . -x ".git/*" ".github/*" "README.md" ".gitignore" "dist/*"
           tar --exclude='.git' --exclude='.github' --exclude='README.md' \
               --exclude='.gitignore' --exclude='dist/*' \
               -czf "dist/$FILENAME.tar.gz" .
-      - name: Create and push tag
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git tag "v$VERSION"
-          git push origin "v$VERSION"
       - name: Upload GitHub release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: "v${{ env.VERSION }}"
-          name: "v${{ env.VERSION }}"
+          tag_name: ${{ env.VERSION }}
+          name: ${{ env.VERSION }}
           files: |
-            dist/Rose-v${{ env.VERSION }}.zip
-            dist/Rose-v${{ env.VERSION }}.tar.gz
+            dist/ModernEase-${{ env.VERSION }}.zip
+            dist/ModernEase-${{ env.VERSION }}.tar.gz
