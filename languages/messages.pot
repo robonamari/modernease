@@ -17,26 +17,26 @@ msgid ""
 "efficient user interface."
 msgstr ""
 
-#: templates/index.min.html:1 templates/index.html:9 templates/index.html:444
+#: templates/index.min.html:1 templates/index.html:9 templates/index.html:443
 msgid "Directory Listing"
 msgstr ""
 
-#: templates/index.html:450
+#: templates/index.html:449
 msgid "File"
 msgstr ""
 
-#: templates/index.html:451
+#: templates/index.html:450
 msgid "Name"
 msgstr ""
 
-#: templates/index.html:452
+#: templates/index.html:451
 msgid "Size"
 msgstr ""
 
-#: templates/index.html:453
+#: templates/index.html:452
 msgid "Last Modified"
 msgstr ""
 
-#: index.py:75
+#: index.py:74
 msgid "Previous Folder"
 msgstr ""

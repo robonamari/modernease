@@ -3,7 +3,6 @@ import glob
 import mimetypes
 import os
 from pathlib import Path
-from typing import Any, Union
 from urllib.parse import quote
 
 from dotenv import load_dotenv
@@ -37,7 +36,7 @@ async def redirect_to_default_lang() -> Response:
 
 
 @app.route("/<lang_code>", methods=["GET"])
-async def index(lang_code: str) -> Union[str, Response]:
+async def index(lang_code: str) -> Response:
     """
     Render directory listing page for the given language.
 
@@ -114,8 +113,8 @@ async def index(lang_code: str) -> Union[str, Response]:
                     "link": f"/{quote(os.path.relpath(file_path, safe_root))}",
                     "size": f"{size:.2f}{size_units[idx]}",
                     "date": datetime.datetime.fromtimestamp(
-                        os.path.getmtime(file_path), tz=datetime.timezone.utc
-                    ).strftime("%Y-%m-%dT%H:%M:%S+00:00"),
+                        os.path.getmtime(file_path), datetime.timezone.utc
+                    ).isoformat(timespec="seconds"),
                 }
             )
         else:
@@ -152,7 +151,7 @@ async def show_license() -> Response:
 
 
 @app.route("/<path:filename>", methods=["GET"])
-async def download_file(filename: str) -> Union[Response, Any]:
+async def download_file(filename: str) -> Response:
     """
     Serve a file securely for download or inline display based on MIME type.
 
@@ -176,7 +175,7 @@ async def download_file(filename: str) -> Union[Response, Any]:
 
 
 @app.errorhandler(Exception)
-async def handle_error(error: Exception) -> Any:
+async def handle_error(error: Exception) -> Response:
     """
     Handle exceptions and redirect to a custom error page based on HTTP status code.
 
@@ -186,37 +185,44 @@ async def handle_error(error: Exception) -> Any:
     Returns:
         Response: Redirect response to a custom error page.
     """
-    error_pages: dict[int, str] = {
-        400: "400",
-        401: "401",
-        403: "403",
-        404: "404",
-        500: "500",
-        503: "503",
-    }
     error_code: int = getattr(error, "code", 500)
-    error_page: str = error_pages.get(error_code, "500")
+    match error_code:
+        case 400:
+            error_page = "400"
+        case 401:
+            error_page = "401"
+        case 403:
+            error_page = "403"
+        case 404:
+            error_page = "404"
+        case 500:
+            error_page = "500"
+        case 503:
+            error_page = "503"
+        case _:
+            error_page = "500"
     return redirect(f"https://error.robonamari.com/{error_page}", code=302)
 
 
 if __name__ == "__main__":
     mode = os.getenv("MODE")
-    if mode == "development":
-        app.run(
-            host=os.getenv("HOST"),
-            port=os.getenv("PORT"),
-            debug=True,
-            use_reloader=True,
-            extra_files=glob.glob(
-                os.path.join(os.path.dirname(__file__), "**", "*"), recursive=True
-            ),
-        )
-    elif mode == "production":
-        print(
-            f"Starting server on {os.getenv('HOST')}:{os.getenv('PORT')} in production mode"
-        )
-        serve(app, host=os.getenv("HOST"), port=os.getenv("PORT"))
-    else:
-        raise RuntimeError(
-            f"Invalid MODE '{mode}'. Must be 'development' or 'production'."
-        )
+    match mode:
+        case "development":
+            app.run(
+                host=os.getenv("HOST"),
+                port=os.getenv("PORT"),
+                debug=True,
+                use_reloader=True,
+                extra_files=glob.glob(
+                    os.path.join(os.path.dirname(__file__), "**", "*"), recursive=True
+                ),
+            )
+        case "production":
+            print(
+                f"Starting server on {os.getenv('HOST')}:{os.getenv('PORT')} in production mode"
+            )
+            serve(app, host=os.getenv("HOST"), port=os.getenv("PORT"))
+        case _:
+            raise RuntimeError(
+                f"Invalid MODE '{mode}'. Must be 'development' or 'production'."
+            )

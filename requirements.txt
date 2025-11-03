@@ -1,5 +1,4 @@
-python-dotenv==1.1.1
-Flask==3.1.1
-Flask[async]==3.1.1
-Flask-Compress==1.18
+python-dotenv==1.2.1
+Flask[async]==3.1.2
+Flask-Compress==1.20
 waitress==3.0.2
