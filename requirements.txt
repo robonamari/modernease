@@ -1,4 +1,4 @@
 python-dotenv==1.2.1
 Flask[async]==3.1.2
-Flask-Compress==1.20
+Flask-Compress==1.23
 waitress==3.0.2
