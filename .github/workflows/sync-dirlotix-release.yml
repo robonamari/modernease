@@ -28,6 +28,7 @@ jobs:
           else
             echo "LAST_DIRLOTIX=" >> $GITHUB_ENV
             echo "LAST_MODERNEASE=" >> $GITHUB_ENV
+          fi
       - name: Skip if already deployed
         if: env.TAG == env.LAST_DIRLOTIX
         run: echo "Already deployed."
