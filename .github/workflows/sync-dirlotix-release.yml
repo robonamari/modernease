@@ -48,10 +48,8 @@ jobs:
           rm "$MOD_ZIP"
           ROOT_DIR=$(find temp_zip -type d -mindepth 1 -maxdepth 1 | head -n 1)
           rm -rf templates downloads
-          mkdir -p templates downloads
-          cp -r "$ROOT_DIR/templates/"* templates/ 2>/dev/null || true
-          cp -r "$ROOT_DIR/templates/"* downloads/ 2>/dev/null || true
-          touch downloads/.gitkeep
+          cp -r "$ROOT_DIR/templates" ./templates
+          cp -r "$ROOT_DIR/templates" ./downloads
           rm -rf temp_zip
           echo "$TAG" > .last-release
           echo "$MOD_TAG" >> .last-release
