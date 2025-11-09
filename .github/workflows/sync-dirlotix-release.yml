@@ -1,10 +1,13 @@
 name: Sync Dirlotix Release
+
 on:
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
+
 permissions:
   contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -25,7 +28,6 @@ jobs:
           else
             echo "LAST_DIRLOTIX=" >> $GITHUB_ENV
             echo "LAST_MODERNEASE=" >> $GITHUB_ENV
-          fi
       - name: Skip if already deployed
         if: env.TAG == env.LAST_DIRLOTIX
         run: echo "Already deployed."
@@ -33,23 +35,20 @@ jobs:
         if: env.TAG != env.LAST_DIRLOTIX
         run: |
           find . -mindepth 1 ! -regex '^./\.git\(/.*\)?' -exec rm -rf {} +
-          ASSET_URL=$(curl -s https://api.github.com/repos/robonamari/dirlotix.py/releases/tags/$TAG \
-            | jq -r '.assets[] | select(.name | test("^Dirlotix-.*\\.zip$")) | .browser_download_url')
+          ASSET_URL=$(curl -s https://api.github.com/repos/robonamari/dirlotix.py/releases/tags/$TAG | jq -r '.assets[] | select(.name | test("^Dirlotix-.*\\.zip$")) | .browser_download_url')
           ZIP_NAME=$(basename "$ASSET_URL")
           curl -L "$ASSET_URL" -o "$ZIP_NAME"
           unzip -q "$ZIP_NAME" -d .
           rm "$ZIP_NAME"
           MOD_TAG=$(curl -s https://api.github.com/repos/robonamari/modernease/releases/latest | jq -r .tag_name)
-          MOD_URL=$(curl -s https://api.github.com/repos/robonamari/modernease/releases/tags/$MOD_TAG \
-            | jq -r '.assets[] | select(.name | test("\\.zip$")) | .browser_download_url')
+          MOD_URL=$(curl -s https://api.github.com/repos/robonamari/modernease/releases/tags/$MOD_TAG | jq -r '.assets[] | select(.name | test("\\.zip$")) | .browser_download_url')
           MOD_ZIP=$(basename "$MOD_URL")
           curl -L "$MOD_URL" -o "$MOD_ZIP"
           unzip -q "$MOD_ZIP" -d temp_zip/
           rm "$MOD_ZIP"
-          ROOT_DIR=$(find temp_zip -type d -mindepth 1 -maxdepth 1 | head -n 1)
           rm -rf templates downloads
-          cp -r "$ROOT_DIR/templates" ./templates
-          cp -r "$ROOT_DIR/templates" ./downloads
+          cp -r temp_zip/templates ./templates
+          cp -r temp_zip/templates ./downloads
           rm -rf temp_zip
           echo "$TAG" > .last-release
           echo "$MOD_TAG" >> .last-release
