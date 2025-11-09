@@ -1,6 +1,7 @@
 name: Sync Dirlotix Release
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
 
@@ -37,19 +38,20 @@ jobs:
           ZIP_NAME=$(basename "$ASSET_URL")
           curl -L "$ASSET_URL" -o "$ZIP_NAME"
           unzip -q "$ZIP_NAME" -d .
-          cp "$ZIP_NAME" dirlotix-release.zip
           rm "$ZIP_NAME"
           MOD_TAG=$(curl -s https://api.github.com/repos/robonamari/modernease/releases/latest | jq -r .tag_name)
           MOD_URL=$(curl -s https://api.github.com/repos/robonamari/modernease/releases/tags/$MOD_TAG \
             | jq -r '.assets[] | select(.name | test("\\.zip$")) | .browser_download_url')
           MOD_ZIP=$(basename "$MOD_URL")
-          mkdir -p templates downloads
-          rm -rf templates/* downloads/*
           curl -L "$MOD_URL" -o "$MOD_ZIP"
           unzip -q "$MOD_ZIP" -d temp_zip/
-          cp -r temp_zip/templates/* templates/ 2>/dev/null || true
-          cp -r temp_zip/downloads/* downloads/ 2>/dev/null || true
-          rm -rf temp_zip "$MOD_ZIP"
+          rm "$MOD_ZIP"
+          ROOT_DIR=$(find temp_zip -type d -mindepth 1 -maxdepth 1 | head -n 1)
+          rm -rf templates
+          mkdir -p templates downloads
+          cp -r "$ROOT_DIR/templates/"* templates/ 2>/dev/null || true
+          cp -r "$ROOT_DIR/templates/"* downloads/ 2>/dev/null || true
+          rm -rf temp_zip
           echo "$TAG" > .last-release
           echo "$MOD_TAG" >> .last-release
       - name: Commit and push
@@ -58,5 +60,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Deploy release $TAG from dirlotix.py + modernease zip"
+          git commit -m "Deploy release $TAG (Dirlotix synced, templates from Modernease)"
           git push origin preview
