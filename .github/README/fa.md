@@ -9,7 +9,7 @@
 
 ---
 
-![بنر](/.github/banner.png)
+![بنر](/.github/banner.webp)
 
 </div>
 
