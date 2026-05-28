@@ -30,9 +30,9 @@ Modernease is a modern, responsive, and customizable theme designed for the Dirl
 To download the latest version of the plugin, visit the GitHub releases page:
 🔗 [GitHub Releases](https://github.com/robonamari/modernease/releases)
 
-### 2. Replacing the templates Folder
+### 2. Replacing the `templates` Folder
 
-Delete the current templates folder completely, then copy the templates folder from the modernease theme package into the same location.
+Copy the `templates` folder from the modernease theme package into your project directory and allow all existing files to be overwritten.
 
 ### All Done!
 
