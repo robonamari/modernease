@@ -21,7 +21,7 @@ jobs:
           zip -rq "dist/ModernEase-${GITHUB_REF_NAME}.zip" . \
             -x ".git/*" \
             -x ".github/*" \
-            -x ".gitignore"
+            -x ".gitignore" \
             -x "dist/*" \
             -x "languages/**/*.po" \
             -x "languages/**/*.pot" \
