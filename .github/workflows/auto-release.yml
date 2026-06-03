@@ -14,23 +14,20 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
-        with:
-          fetch-depth: 1
-      - name: Extract version
-        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
-      - name: Build release assets
+      - name: Create clean release archive
         run: |
+          set -e
           mkdir -p dist
-          FILENAME="ModernEase-${VERSION}"
-          zip -rq "dist/$FILENAME.zip" . -x ".git/*" ".github/*" "README.md" ".gitignore" "dist/*"
-          tar --exclude='.git' --exclude='.github' --exclude='README.md' \
-              --exclude='.gitignore' --exclude='dist/*' \
-              -czf "dist/$FILENAME.tar.gz" .
-      - name: Upload GitHub release
+          zip -rq "dist/ModernEase-${GITHUB_REF_NAME}.zip" . \
+            -x ".git/*" \
+            -x ".github/*" \
+            -x ".gitignore"
+            -x "dist/*" \
+            -x "languages/**/*.po" \
+            -x "languages/**/*.pot" \
+      - name: Create GitHub Release
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: ${{ env.VERSION }}
-          name: ${{ env.VERSION }}
-          files: |
-            dist/ModernEase-${{ env.VERSION }}.zip
-            dist/ModernEase-${{ env.VERSION }}.tar.gz
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          files: dist/ModernEase-${{ github.ref_name }}.zip
